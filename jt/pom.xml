@@ -23,7 +23,7 @@
     <modules>
     	<module>jt-common</module>
     	<module>jt-eureka</module>
-    	<module>jt-zuu</module>
+    	<module>jt-zuul</module>
     	<module>jt-user</module>
     	<module>jt-web</module>
     	<module>jt-order</module>
