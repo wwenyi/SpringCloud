@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.wwy.user.Dao.UserDao">
+		<!-- 查询总条数 -->
+	<select id="selectCount1" resultType="java.lang.Integer">
+	select count(*) from user where role=1
+	</select>
+	<select id="selectCount2" resultType="java.lang.Integer">
+	select count(*) from user where role=2
+	</select>
+	<!-- 分页查询商家或分销商信息 -->
+	<select id="selectAll1" resultType="com.wwy.entry.User">
+	select * from user  where role=1 limit #{page},#{start}
+	</select>
+	<select id="selectAll2" resultType="com.wwy.entry.User">
+	select * from user where role=2 limit #{page},#{start} 
+	</select>
+</mapper>

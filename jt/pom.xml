@@ -1,0 +1,36 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.wwy</groupId>
+  <artifactId>jt</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.0.0.RELEASE</version>
+    </parent>
+    <dependencies>
+
+    <dependency>
+    	<groupId>org.springframework.boot</groupId>
+    	<artifactId>spring-boot-starter</artifactId>
+    </dependency>
+    </dependencies>
+  
+  
+  
+  
+    <modules>
+    	<module>jt-common</module>
+    	<module>jt-eureka</module>
+    	<module>jt-zuu</module>
+    	<module>jt-user</module>
+    	<module>jt-web</module>
+    	<module>jt-order</module>
+    	<module>jt-car</module>
+    	<module>jt-hystrix</module>
+    	<module>jt-turbine</module>
+    	<module>jt-gateway</module>
+    	<module>jt-config</module>
+    </modules>
+</project>

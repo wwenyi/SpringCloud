@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.wwy.test.exporttest.mapper.ExportMapper">
+	<select id="get" resultType="java.util.HashMap">
+	select jt_order.order_id 订单ID,
+	user.nick_name 分销商昵称,
+	commodity.commodity_name 商品名,
+	customer.cname 客户昵称,
+	jt_order.number 商品数量,
+	jt_order.sum_amount 商品总价,
+	jt_order.actual_amount 代理总价,
+	jt_order.state 订单状态,
+	jt_order.courier 快递单号
+ from 
+jt_order left join commodity
+on jt_order.commodity_id=commodity.commodity_id
+left join user 
+on jt_order.dis_id=user.user_id
+left join customer
+on jt_order.customer_id=customer.customer_id
+<if test="ids!=null">
+where jt_order.order_id in
+<foreach collection="ids" item="id" open="(" close=")" separator=",">
+#{id}
+</foreach>
+</if>
+</select>
+</mapper>

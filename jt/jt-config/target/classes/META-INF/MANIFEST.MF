@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: jt-config
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: 1
+Implementation-Vendor-Id: com.wwy
+Build-Jdk: 1.8.0_221
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/jt/jt-config
+Created-By: Maven Integration for Eclipse
+

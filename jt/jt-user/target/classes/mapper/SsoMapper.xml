@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.wwy.sso.dao.SsoDao">
+		<!-- 登录方法的sql语句 -->
+	<select id="login" resultType="com.wwy.entry.User">
+	select * from user where tel=#{tel} and passWord=#{passWord}
+	</select>
+	<!-- 注册方法的sql语句 -->
+	<update id="register"> 
+	insert into user value(null,#{userName},#{nickName},
+	#{passWord},#{portrait},#{tel},#{tel2},
+	#{addr},#{weixin},#{emil},#{createTime},
+	#{examine},#{delete},#{prohibit},#{role})
+	</update>
+</mapper>

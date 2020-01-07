@@ -1,0 +1,18 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.wwy.config.ReadDataSourceConfig",
+      "name": "spring.datasource.read",
+      "sourceMethod": "public javax.sql.DataSource readDataSource() ",
+      "type": "javax.sql.DataSource"
+    },
+    {
+      "sourceType": "com.wwy.config.WriteDataSourceConfig",
+      "name": "spring.datasource.write",
+      "sourceMethod": "public javax.sql.DataSource writeDataSource() ",
+      "type": "javax.sql.DataSource"
+    }
+  ],
+  "properties": []
+}
