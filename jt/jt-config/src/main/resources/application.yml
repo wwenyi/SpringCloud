@@ -15,8 +15,8 @@ spring:
     host: 192.168.40.152
     port: 6379 
   cloud:    config:      server:        git:          uri: https://github.com/wwenyi/jt-config.git
-          search-paths: config          username: wwyawxq@163.com
-          password: wjbgnsmms123
+          search-paths: config          username: #***
+          password: #***
 eureka:
   instance:
     prefer-ip-address: true #以IP地址注册到服务中心，相互注册使用IP地址
