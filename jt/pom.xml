@@ -4,11 +4,17 @@
   <artifactId>jt</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
-    <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.0.0.RELEASE</version>
-    </parent>
+    	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.2.3.RELEASE</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	
+	<properties>
+		<java.version>1.8</java.version>
+		<spring-cloud.version>Hoxton.SR1</spring-cloud.version>
+	</properties>
     <dependencies>
 
     <dependency>
@@ -30,7 +36,6 @@
     	<module>jt-car</module>
     	<module>jt-hystrix</module>
     	<module>jt-turbine</module>
-    	<module>jt-gateway</module>
     	<module>jt-config</module>
     </modules>
 </project>

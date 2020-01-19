@@ -1,0 +1,10 @@
+com\wwy\test\service\impl\DataSourceTestServiceImpl.class
+com\wwy\test\service\DataSourceTestService.class
+com\wwy\config\WriteDataSourceConfig.class
+META-INF\spring-configuration-metadata.json
+com\wwy\test\dao\write\WriteMapper.class
+com\wwy\test\controller\DataSourceTestController.class
+com\wwy\test\dao\read\ReadMapper.class
+com\wwy\Springbootrun.class
+com\wwy\entry\Car.class
+com\wwy\config\ReadDataSourceConfig.class
