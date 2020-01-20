@@ -3,11 +3,11 @@ server:
   port: 8001
 #数据源
 spring:  application:    name: jt-zuul  datasource:    driver-class-name: com.jdbc.mysql.Driver
-    url: jdbc:mysql:///jtsys?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
+    url: jdbc:mysql:///market?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
     username: root
     password: root
   redis:
-    host: 192.168.40.152
+    host: 192.168.42.132
     port: 6379
 #注册到eureka中
 eureka:  instance:

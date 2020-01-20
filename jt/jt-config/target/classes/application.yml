@@ -2,7 +2,7 @@ server:
   port: 8007
 spring:
   rabbitmq:
-    host: 192.168.40.152
+    host: 192.168.42.132
     username: admin
     password: admin
     port: 5672
@@ -12,7 +12,7 @@ spring:
   application:
     name: jt-config
   redis:
-    host: 192.168.40.152
+    host: 192.168.42.132
     port: 6379 
   cloud:    config:      server:        git:          uri: https://github.com/wwenyi/jt-config.git
           search-paths: config          username: #***
