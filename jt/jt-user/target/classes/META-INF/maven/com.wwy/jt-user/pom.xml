@@ -14,14 +14,6 @@
 			<artifactId>jt-common</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
-
-		<!-- 简化代码用的lombok -->
-
-		<dependency>
-			<groupId>com.alibaba</groupId>
-			<artifactId>druid-spring-boot-starter</artifactId>
-			<version>1.1.9</version>
-		</dependency>
 		<!-- mysql驱动 -->
 		<dependency>
 			<groupId>mysql</groupId>
@@ -43,17 +35,17 @@
 		<dependency>
 			<groupId>com.alibaba</groupId>
 			<artifactId>druid</artifactId>
-			<version>1.0.29</version>
+			<version>${druid.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>com.baomidou</groupId>
 			<artifactId>mybatis-plus</artifactId>
-			<version>2.3</version>
+			<version>${mybatis-plus.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.mybatis.spring.boot</groupId>
 			<artifactId>mybatis-spring-boot-starter</artifactId>
-			<version>1.3.2</version>
+			<version>${mybatis.version}</version>
 		</dependency>
 
 		<dependency>
@@ -98,7 +90,7 @@
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-dependencies</artifactId>
-				<version>Hoxton.SR1</version>
+				<version>${spring-cloud.version}</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
@@ -106,17 +98,17 @@
 			<dependency>
 				<groupId>cn.afterturn</groupId>
 				<artifactId>easypoi-base</artifactId>
-				<version>3.1.0</version>
+				<version>${easypoi.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>cn.afterturn</groupId>
 				<artifactId>easypoi-web</artifactId>
-				<version>3.1.0</version>
+				<version>${easypoi.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>cn.afterturn</groupId>
 				<artifactId>easypoi-annotation</artifactId>
-				<version>3.1.0</version>
+				<version>${easypoi.version}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
