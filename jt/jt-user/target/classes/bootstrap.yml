@@ -6,7 +6,7 @@ spring:
         service-id: jt-config
       name: user-config
       #rabbit配置  rabbitmq:
-    host: 192.168.40.152
+    host: 192.168.42.132
     username: admin
     password: admin
     port: 5672
